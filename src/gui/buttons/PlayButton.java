@@ -3,7 +3,7 @@ package gui.buttons;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import events.StopCountdownEvent;
+import controller.events.StopCountdownEvent;
 import hochberger.utilities.eventbus.EventBus;
 import hochberger.utilities.gui.ImageButton;
 import hochberger.utilities.images.loader.ImageLoader;
@@ -16,7 +16,7 @@ public class PlayButton extends ImageButton implements ActionListener {
 	public PlayButton(EventBus eventBus) {
 		super(ImageLoader.loadImage("graphics/go.png"),
 				ImageLoader.loadImage("graphics/go_hover.png"),
-				ImageLoader.loadImage("graphics/go.png"),
+				ImageLoader.loadImage("graphics/go_clicked.png"),
 				ImageLoader.loadImage("graphics/go.png"));
 		this.eventBus = eventBus;
 		addActionListener(this);

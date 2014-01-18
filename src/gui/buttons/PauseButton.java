@@ -3,7 +3,7 @@ package gui.buttons;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import events.StopCountdownEvent;
+import controller.events.StopCountdownEvent;
 import hochberger.utilities.eventbus.EventBus;
 import hochberger.utilities.gui.ImageButton;
 import hochberger.utilities.images.loader.ImageLoader;
@@ -16,7 +16,7 @@ public class PauseButton extends ImageButton implements ActionListener {
 	public PauseButton(EventBus eventBus) {
 		super(ImageLoader.loadImage("graphics/pause.png"),
 				ImageLoader.loadImage("graphics/pause_hover.png"),
-				ImageLoader.loadImage("graphics/pause.png"),
+				ImageLoader.loadImage("graphics/pause_clicked.png"),
 				ImageLoader.loadImage("graphics/pause.png"));
 		this.eventBus = eventBus;
 		addActionListener(this);

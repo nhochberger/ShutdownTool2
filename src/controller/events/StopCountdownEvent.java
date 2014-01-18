@@ -1,10 +1,10 @@
-package events;
+package controller.events;
 
 import hochberger.utilities.eventbus.Event;
 
-public class StartCountdownEvent implements Event {
+public class StopCountdownEvent implements Event {
 
-	public StartCountdownEvent() {
+	public StopCountdownEvent() {
 		super();
 	}
 

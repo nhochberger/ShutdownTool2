@@ -1,4 +1,4 @@
-package events;
+package controller.events;
 
 import hochberger.utilities.eventbus.Event;
 
